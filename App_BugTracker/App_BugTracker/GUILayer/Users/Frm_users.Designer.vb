@@ -24,22 +24,22 @@ Partial Class Frm_Users
     Private Sub InitializeComponent()
         Me.pnl_filtros = New System.Windows.Forms.GroupBox()
         Me.dgv_users = New System.Windows.Forms.DataGridView()
-        Me.chk_todos = New System.Windows.Forms.CheckBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_nombre = New System.Windows.Forms.TextBox()
-        Me.btn_consultar = New System.Windows.Forms.Button()
-        Me.cbo_perfiles = New System.Windows.Forms.ComboBox()
-        Me.lbl_estado = New System.Windows.Forms.Label()
-        Me.btn_editar = New System.Windows.Forms.Button()
-        Me.btn_nuevo = New System.Windows.Forms.Button()
-        Me.btn_salir = New System.Windows.Forms.Button()
-        Me.btn_quitar = New System.Windows.Forms.Button()
         Me.col_nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.col_estado = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.col_email = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.col_perfil = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.col_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.col_pass = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.chk_todos = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_nombre = New System.Windows.Forms.TextBox()
+        Me.btn_consultar = New System.Windows.Forms.Button()
+        Me.cbo_perfiles = New System.Windows.Forms.ComboBox()
+        Me.lbl_estado = New System.Windows.Forms.Label()
+        Me.btn_quitar = New System.Windows.Forms.Button()
+        Me.btn_salir = New System.Windows.Forms.Button()
+        Me.btn_editar = New System.Windows.Forms.Button()
+        Me.btn_nuevo = New System.Windows.Forms.Button()
         Me.pnl_filtros.SuspendLayout()
         CType(Me.dgv_users, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -73,6 +73,46 @@ Partial Class Frm_Users
         Me.dgv_users.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgv_users.Size = New System.Drawing.Size(372, 192)
         Me.dgv_users.TabIndex = 8
+        '
+        'col_nombre
+        '
+        Me.col_nombre.HeaderText = "Nombre"
+        Me.col_nombre.Name = "col_nombre"
+        Me.col_nombre.ReadOnly = True
+        '
+        'col_estado
+        '
+        Me.col_estado.HeaderText = "estado"
+        Me.col_estado.Name = "col_estado"
+        Me.col_estado.ReadOnly = True
+        Me.col_estado.Visible = False
+        '
+        'col_email
+        '
+        Me.col_email.HeaderText = "Email"
+        Me.col_email.Name = "col_email"
+        Me.col_email.ReadOnly = True
+        Me.col_email.Width = 130
+        '
+        'col_perfil
+        '
+        Me.col_perfil.HeaderText = "Perfil"
+        Me.col_perfil.Name = "col_perfil"
+        Me.col_perfil.ReadOnly = True
+        '
+        'col_id
+        '
+        Me.col_id.HeaderText = "Id"
+        Me.col_id.Name = "col_id"
+        Me.col_id.ReadOnly = True
+        Me.col_id.Visible = False
+        '
+        'col_pass
+        '
+        Me.col_pass.HeaderText = "Password"
+        Me.col_pass.Name = "col_pass"
+        Me.col_pass.ReadOnly = True
+        Me.col_pass.Visible = False
         '
         'chk_todos
         '
@@ -126,6 +166,25 @@ Partial Class Frm_Users
         Me.lbl_estado.TabIndex = 0
         Me.lbl_estado.Text = "Perfil:"
         '
+        'btn_quitar
+        '
+        Me.btn_quitar.Enabled = False
+        Me.btn_quitar.Image = Global.App_BugTracker.My.Resources.Resources.eliminar
+        Me.btn_quitar.Location = New System.Drawing.Point(104, 322)
+        Me.btn_quitar.Name = "btn_quitar"
+        Me.btn_quitar.Size = New System.Drawing.Size(40, 40)
+        Me.btn_quitar.TabIndex = 6
+        Me.btn_quitar.UseVisualStyleBackColor = True
+        '
+        'btn_salir
+        '
+        Me.btn_salir.Image = Global.App_BugTracker.My.Resources.Resources.salir
+        Me.btn_salir.Location = New System.Drawing.Point(385, 322)
+        Me.btn_salir.Name = "btn_salir"
+        Me.btn_salir.Size = New System.Drawing.Size(40, 40)
+        Me.btn_salir.TabIndex = 7
+        Me.btn_salir.UseVisualStyleBackColor = True
+        '
         'btn_editar
         '
         Me.btn_editar.Enabled = False
@@ -144,65 +203,6 @@ Partial Class Frm_Users
         Me.btn_nuevo.Size = New System.Drawing.Size(40, 40)
         Me.btn_nuevo.TabIndex = 4
         Me.btn_nuevo.UseVisualStyleBackColor = True
-        '
-        'btn_salir
-        '
-        Me.btn_salir.Image = Global.App_BugTracker.My.Resources.Resources.salir
-        Me.btn_salir.Location = New System.Drawing.Point(385, 322)
-        Me.btn_salir.Name = "btn_salir"
-        Me.btn_salir.Size = New System.Drawing.Size(40, 40)
-        Me.btn_salir.TabIndex = 7
-        Me.btn_salir.UseVisualStyleBackColor = True
-        '
-        'btn_quitar
-        '
-        Me.btn_quitar.Enabled = False
-        Me.btn_quitar.Image = Global.App_BugTracker.My.Resources.Resources.eliminar
-        Me.btn_quitar.Location = New System.Drawing.Point(104, 322)
-        Me.btn_quitar.Name = "btn_quitar"
-        Me.btn_quitar.Size = New System.Drawing.Size(40, 40)
-        Me.btn_quitar.TabIndex = 6
-        Me.btn_quitar.UseVisualStyleBackColor = True
-        '
-        'col_nombre
-        '
-        Me.col_nombre.HeaderText = "Nombre"
-        Me.col_nombre.Name = "col_nombre"
-        Me.col_nombre.ReadOnly = True
-        '
-        'col_estado
-        '
-        Me.col_estado.HeaderText = "estado"
-        Me.col_estado.Name = "col_estado"
-        Me.col_estado.ReadOnly = True
-        Me.col_estado.Visible = False
-        '
-        'col_email
-        '
-        Me.col_email.HeaderText = "Email"
-        Me.col_email.Name = "col_email"
-        Me.col_email.ReadOnly = True
-        Me.col_email.Width = 130
-        '
-        'col_perfil
-        '
-        Me.col_perfil.HeaderText = "Perfil"
-        Me.col_perfil.Name = "col_perfil"
-        Me.col_perfil.ReadOnly = True
-        '
-        'col_id
-        '
-        Me.col_id.HeaderText = "Id"
-        Me.col_id.Name = "col_id"
-        Me.col_id.ReadOnly = True
-        Me.col_id.Visible = False
-        '
-        'col_pass
-        '
-        Me.col_pass.HeaderText = "Password"
-        Me.col_pass.Name = "col_pass"
-        Me.col_pass.ReadOnly = True
-        Me.col_pass.Visible = False
         '
         'Frm_Users
         '

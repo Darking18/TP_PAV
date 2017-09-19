@@ -90,4 +90,8 @@ Public Class Frm_Users
         Frm_abm_user.ShowDialog()
         btn_consultar_Click(sender, e)
     End Sub
+
+    Private Sub pnl_filtros_Enter(sender As Object, e As EventArgs) Handles pnl_filtros.Enter
+
+    End Sub
 End Class

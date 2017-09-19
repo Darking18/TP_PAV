@@ -38,4 +38,12 @@
     Private Sub ConsultaDeProveedorToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultaDeProveedorToolStripMenuItem.Click
         Frm_proveedor.ShowDialog()
     End Sub
+
+    Private Sub ConsultaDeClienteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultaDeClienteToolStripMenuItem.Click
+        Cliente.ShowDialog()
+    End Sub
+
+    Private Sub ConsultaDePerfilesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultaDePerfilesToolStripMenuItem.Click
+        Frm_pefiles.ShowDialog()
+    End Sub
 End Class

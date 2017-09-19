@@ -17,7 +17,6 @@
         Me.Dispose()
     End Sub
 
-
     Public Sub seleccionar_usuario(ByVal op As Opcion, ByVal row_selected As DataGridViewRow)
         _action = op
         _row_selected = row_selected

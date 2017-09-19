@@ -178,3 +178,24 @@ F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\De
 F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
 F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
 F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbproj.GenerateResource.Cache
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe.config
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Agregar.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Compras.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_add_provider.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_proveedor.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_user.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbproj.GenerateResource.Cache
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Cliente.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_cliente.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.frm_amb_perfiles.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_pefiles.resources
