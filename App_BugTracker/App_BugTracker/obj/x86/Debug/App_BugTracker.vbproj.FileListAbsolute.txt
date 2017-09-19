@@ -1,0 +1,180 @@
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\martindapol\AppData\Local\Temporary Projects\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase02\First ConnectionDB\Login\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_NewEditBug.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_NewEditBug.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Mis_Bugs.resources
+C:\Users\martindapol\Desktop\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Comments.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Comments.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Mis_Bugs.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_NewEditBug.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\martindapol\Desktop\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.vbproj.GenerateResource.Cache
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.exe
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.pdb
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\bin\Debug\App_BugTracker.xml
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Comments.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Mis_Bugs.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_NewEditBug.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\PAV I\Anteriores\PAV I  3k52016\Clase05\App_BugTracker II\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase04\resuelto B\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_new_user.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase05\Resolucion consultas sin alta\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase05\Resolucion consultas sin alta\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase05\Resolucion consultas sin alta\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_user.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios\App_BugTracker\App_BugTracker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+C:\Users\MARTIN\Desktop\2017\PAV1\Clase06\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Bugs.resources
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_user.resources
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+D:\Descargas\Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbproj.GenerateResource.Cache
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Agregar.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_user.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbproj.GenerateResource.Cache
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_proveedor.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe.config
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_add_provider.resources
+G:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Compras.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe.config
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.exe
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.xml
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.pdb
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.exe
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.pdb
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\bin\Debug\App_BugTracker.xml
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Agregar.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Compras.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_login.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Principal.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_add_provider.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_proveedor.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_user.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Users.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Resources.resources
+F:\ \Modelo ABMC Usuarios para alumnos\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbproj.GenerateResource.Cache
