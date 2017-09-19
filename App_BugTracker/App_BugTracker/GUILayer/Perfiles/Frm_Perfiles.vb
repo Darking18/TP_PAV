@@ -18,7 +18,10 @@ Public Class Frm_pefiles
         End If
     End Sub
 
-
+    Private Sub dgv_perfiles_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_perfiles.CellContentClick
+        btn_editar.Enabled = True
+        btn_quitar.Enabled = True
+    End Sub
 
     Private Sub llenar_grid(ByVal source As DataTable)
         dgv_perfiles.Rows.Clear()
