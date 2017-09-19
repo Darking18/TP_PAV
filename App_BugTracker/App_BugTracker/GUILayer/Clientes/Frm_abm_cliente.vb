@@ -48,13 +48,13 @@
                 End If
             Case Opcion.delete
                 If MessageBox.Show("Seguro que desea borrar al Cliente seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
-                    estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Cliente where id_cliente = '" + _row_selected.Cells("col_id").Value + "'").Rows(0).Item("estado").ToString
+                    estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Cliente where id_cliente = '" + _row_selected.Cells("col_id_id").Value + "'").Rows(0).Item("estado").ToString
                     If estado = "N" Then
                         estado = "S"
                     Else
                         estado = "N"
                     End If
-                    str_sql = "UPDATE Users SET estado = '" + estado + "' WHERE id_usuario = " + _row_selected.Cells("col_id").Value
+                    str_sql = "UPDATE Perfiles SET estado = '" + estado + "' WHERE id_perfil = " + _row_selected.Cells("col_id_id").Value
                     If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
                         MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Dispose()
@@ -69,8 +69,8 @@
                     str_sql += Text_nombre.Text & "', direccion='"
                     str_sql += Text_direccion.Text & "',dni='"
                     str_sql += Text_dni.Text & "', telefono='"
-                    str_sql += Text_telefono.Text & "', id_cliente='"
-                    str_sql += "where id_cliente ='" + _row_selected.Cells("col_id").Value + "'"
+                    str_sql += Text_telefono.Text & "'"
+                    str_sql += "where id_cliente ='" + _row_selected.Cells("col_id_id").Value + "'"
                     If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
                         MessageBox.Show("Usuario actualizado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Dispose()

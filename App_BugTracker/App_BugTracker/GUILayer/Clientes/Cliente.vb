@@ -105,4 +105,7 @@ Public Class Cliente
         End If
     End Sub
 
+    Private Sub pnl_filtros_Enter(sender As Object, e As EventArgs) Handles pnl_filtros.Enter
+
+    End Sub
 End Class
