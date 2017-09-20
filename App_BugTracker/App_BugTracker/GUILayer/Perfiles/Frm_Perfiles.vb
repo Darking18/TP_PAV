@@ -26,8 +26,10 @@ Public Class Frm_pefiles
     Private Sub llenar_grid(ByVal source As DataTable)
         dgv_perfiles.Rows.Clear()
         For Each row As DataRow In source.Rows
-            dgv_perfiles.Rows.Add(New String() {row.Item("n_perfil").ToString, row.Item("estado").ToString, row.Item("id_perfil").ToString})
-        Next
+            If row.Item("estado").ToString <> "N" Then
+                dgv_perfiles.Rows.Add(New String() {row.Item("n_perfil").ToString, row.Item("estado").ToString, row.Item("id_perfil").ToString})
+            End If
+Next
     End Sub
 
     Private Sub btn_editar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_editar.Click

@@ -69,8 +69,10 @@ Public Class Frm_Users
     Private Sub llenar_grid(ByVal source As DataTable)
         dgv_users.Rows.Clear()
         For Each row As DataRow In source.Rows
-            dgv_users.Rows.Add(New String() {row.Item("n_usuario").ToString, row.Item("estado").ToString, row.Item("email").ToString, row.Item("n_perfil").ToString, row.Item("id_usuario").ToString, row.Item("password").ToString})
-        Next
+            If row.Item("estado").ToString <> "N" Then
+                dgv_users.Rows.Add(New String() {row.Item("n_usuario").ToString, row.Item("estado").ToString, row.Item("email").ToString, row.Item("n_perfil").ToString, row.Item("id_usuario").ToString, row.Item("password").ToString})
+            End If
+Next
     End Sub
 
     Private Sub btn_editar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_editar.Click

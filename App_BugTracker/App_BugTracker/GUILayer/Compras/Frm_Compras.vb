@@ -56,14 +56,16 @@
     Private Sub llenarGrid(ByVal source As DataTable)
         dgv_bugs.Rows.Clear()
         For Each fila As DataRow In source.Rows
-            dgv_bugs.Rows.Add(New String() {fila.Item("id_compra").ToString, fila.Item("producto").ToString, fila.Item("cantidad").ToString, fila.Item("precio").ToString, fila.Item("n_proveedor").ToString, fila.Item("n_metodo_pago").ToString, fila.Item("estado").ToString})
+            If fila.Item("estado").ToString <> "N" Then
+                dgv_bugs.Rows.Add(New String() {fila.Item("id_compra").ToString, fila.Item("producto").ToString, fila.Item("cantidad").ToString, fila.Item("precio").ToString, fila.Item("n_proveedor").ToString, fila.Item("n_metodo_pago").ToString, fila.Item("estado").ToString})
+            End If
         Next
     End Sub
 
     Private Sub btn_consultar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_consultar.Click
         'Recuperar datos actualizar grid...
         Dim filters As New List(Of Object)
-        Dim str As String = "SELECT id_compra, producto, cantidad, precio, n_proveedor, n_metodo_pago, estado FROM ((Compras join  Proveedor on Compras.proveedor = id_proveedor)join  MetodoDePago on Compras.metodo_pago   = id_metodo_pago) where 1=1 "
+        Dim str As String = "SELECT id_compra, producto, cantidad, precio, n_proveedor, n_metodo_pago, Compras.estado FROM ((Compras join  Proveedor on Compras.proveedor = id_proveedor)join  MetodoDePago on Compras.metodo_pago   = id_metodo_pago) where 1=1 "
         Dim flag As Boolean = False
         'Validar campos de fechas. Si son fechas válidas las agregamos. Caso contrario Nothing
         If Not ckb_todos.Checked Then

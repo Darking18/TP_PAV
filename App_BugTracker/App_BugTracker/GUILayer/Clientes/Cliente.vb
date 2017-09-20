@@ -51,8 +51,10 @@ Public Class Cliente
     Private Sub llenar_grid(ByVal source As DataTable)
         dgv_cliente.Rows.Clear()
         For Each row As DataRow In source.Rows
-            dgv_cliente.Rows.Add(New String() {row.Item("n_cliente").ToString, row.Item("estado").ToString, row.Item("dni").ToString, row.Item("direccion").ToString, row.Item("id_cliente").ToString, row.Item("telefono").ToString})
-        Next
+            If row.Item("estado").ToString <> "N" Then
+                dgv_cliente.Rows.Add(New String() {row.Item("n_cliente").ToString, row.Item("estado").ToString, row.Item("dni").ToString, row.Item("direccion").ToString, row.Item("id_cliente").ToString, row.Item("telefono").ToString})
+            End If
+Next
     End Sub
 
     Private Sub btn_consulta_Click_1(sender As Object, e As EventArgs) Handles btn_consulta.Click

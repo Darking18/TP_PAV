@@ -277,7 +277,7 @@ Partial Class Frm_Compras
         Me.btn_nuevo.TabIndex = 6
         Me.btn_nuevo.UseVisualStyleBackColor = True
         '
-        'Frm_Bugs
+        'Frm_Compras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -292,7 +292,7 @@ Partial Class Frm_Compras
         Me.Controls.Add(Me.pnl_filtros)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
-        Me.Name = "Frm_Bugs"
+        Me.Name = "Frm_Compras"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Consulta General de Compras"
         Me.pnl_filtros.ResumeLayout(False)

@@ -54,9 +54,9 @@
                     Else
                         estado = "N"
                     End If
-                    str_sql = "UPDATE Perfiles SET estado = '" + estado + "' WHERE id_perfil = " + _row_selected.Cells("col_id_id").Value
+                    str_sql = "UPDATE Cliente SET estado = '" + estado + "' WHERE id_cliente = " + _row_selected.Cells("col_id_id").Value
                     If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
-                        MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        MessageBox.Show("Cliente Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
                         Me.Dispose()
                     Else
                         MessageBox.Show("Error al borrar al Usuario", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)

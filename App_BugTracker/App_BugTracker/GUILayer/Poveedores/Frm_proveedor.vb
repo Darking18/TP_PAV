@@ -33,13 +33,15 @@
     Private Sub llenarGrid(ByVal source As DataTable)
         dgv_proveedor.Rows.Clear()
         For Each fila As DataRow In source.Rows
-            dgv_proveedor.Rows.Add(New String() {fila.Item("id_proveedor").ToString, fila.Item("n_proveedor").ToString, fila.Item("cuenta_bancaria").ToString, fila.Item("telefono").ToString})
-        Next
+            If fila.Item("estado").ToString <> "N" Then
+                dgv_proveedor.Rows.Add(New String() {fila.Item("id_proveedor").ToString, fila.Item("n_proveedor").ToString, fila.Item("cuenta_bancaria").ToString, fila.Item("telefono").ToString, fila.Item("estado").ToString})
+            End If
+ Next
     End Sub
 
     Private Sub btn_consulta_Click(sender As Object, e As EventArgs) Handles btn_consulta.Click
         Dim filters As New List(Of Object)
-        Dim str As String = "SELECT id_proveedor, n_proveedor, cuenta_bancaria, telefono FROM Proveedor where 1=1 "
+        Dim str As String = "SELECT id_proveedor, n_proveedor, cuenta_bancaria, telefono, estado FROM Proveedor where 1=1 "
         Dim flag As Boolean = False
         If Not chb_alls.Checked Then
             If txt_account.Text <> String.Empty Then
@@ -101,8 +103,25 @@
     End Sub
 
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click
-        Frm_add_provider.seleccionar_usuario(Frm_add_provider.Opcion.delete, dgv_proveedor.CurrentRow)
-        Frm_add_provider.ShowDialog()
+        Dim estado As String
+        Dim str_sql As String
+        If MessageBox.Show("Seguro que desea borrar al Perfil seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+            estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Proveedores where id_perfil = '" + dgv_proveedor.Rows.Item("id_perfil").ToString + "'").Rows(0).Item("estado").ToString
+            If estado = "N" Then
+                estado = "S"
+            Else
+                estado = "N"
+            End If
+            str_sql = "UPDATE Perfiles SET estado = '" + estado + "' WHERE id_perfil = " + dgv_proveedor.Rows.Item("id_perfil").ToString
+            If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                MessageBox.Show("Perfil Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Dispose()
+            Else
+                MessageBox.Show("Error al borrar al Perfil", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End If
+        'Frm_add_provider.seleccionar_usuario(Frm_add_provider.Opcion.delete, dgv_proveedor.CurrentRow)
+        'Frm_add_provider.ShowDialog()
         btn_consulta_Click(sender, e)
     End Sub
 End Class
