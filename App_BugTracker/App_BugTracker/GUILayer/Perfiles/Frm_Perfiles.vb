@@ -38,9 +38,26 @@ Next
         btn_consultar_Click(sender, e)
     End Sub
     Private Sub btn_quitar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_quitar.Click
-        frm_amb_perfiles.seleccionar_usuario(frm_amb_perfiles.Opcion.delete, dgv_perfiles.CurrentRow)
-        frm_amb_perfiles.ShowDialog()
-        btn_consultar_Click(sender, e)
+        Dim estado As String
+        Dim str_sql As String
+        If MessageBox.Show("Seguro que desea borrar al Perfil seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+            estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Perfiles where id_perfil = '" + dgv_perfiles.CurrentRow.Cells("id_perfil").Value + "'").Rows(0).Item("estado").ToString
+            If estado = "N" Then
+                estado = "S"
+            Else
+                estado = "N"
+            End If
+            str_sql = "UPDATE Perfiles SET estado = '" + estado + "' WHERE id_perfil = " + dgv_perfiles.CurrentRow.Cells("id_perfil").Value
+            If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                MessageBox.Show("Perfil Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Dispose()
+            Else
+                MessageBox.Show("Error al borrar al Perfil", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End If
+        'frm_amb_perfiles.seleccionar_usuario(frm_amb_perfiles.Opcion.delete, dgv_perfiles.CurrentRow)
+        'frm_amb_perfiles.ShowDialog()
+        'btn_consultar_Click(sender, e)
     End Sub
 
     Private Sub btn_consultar_Click(sender As Object, e As EventArgs) Handles btn_consultar.Click

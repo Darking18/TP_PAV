@@ -27,7 +27,7 @@
 
     Private Sub btn_accept_Click(sender As Object, e As EventArgs) Handles btn_accept.Click
         Dim str_sql As String = ""
-        Dim estado As String
+        'Dim estado As String
         Select _action
             Case Opcion.insert
                 If validar_campos() Then
@@ -43,22 +43,22 @@
                     MessageBox.Show("Proveeedor ya existente, Use otro nombre.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 End If
-            Case Opcion.delete
-                If MessageBox.Show("Seguro que desea al Proveedor seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
-                    estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from dbo.Proveedor where id_proveedor = '" + _row_selected.Cells("col_id_proveedor").Value + "'").Rows(0).Item("estado").ToString
-                    If estado = "N" Then
-                        estado = "S"
-                    Else
-                        estado = "N"
-                    End If
-                    str_sql = "UPDATE dbo.Proveedor SET estado = '" + estado + "' WHERE id_proveedor = " + _row_selected.Cells("col_id_proveedor").Value
-                    If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
-                        MessageBox.Show("Proveedor borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Me.Dispose()
-                    Else
-                        MessageBox.Show("Error al borrar al proveedor!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    End If
-                End If
+                ' Case Opcion.delete
+                '  If MessageBox.Show("Seguro que desea al Proveedor seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+                ' estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from dbo.Proveedor where id_proveedor = '" + _row_selected.Cells("col_id_proveedor").Value + "'").Rows(0).Item("estado").ToString
+                'If estado = "N" Then
+                'estado = "S"
+                'Else
+                'estado = "N"
+                'End If
+                'str_sql = "UPDATE dbo.Proveedor SET estado = '" + estado + "' WHERE id_proveedor = " + _row_selected.Cells("col_id_proveedor").Value
+                'If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                'MessageBox.Show("Proveedor borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'Me.Dispose()
+                'Else
+                'MessageBox.Show("Error al borrar al proveedor!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'End If
+                'End If
             Case Opcion.update
                 If validar_campos() Then
                     str_sql = "update dbo.Proveedor set n_proveedor ='"

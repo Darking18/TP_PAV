@@ -51,22 +51,22 @@
 
                 End If
               
-            Case Opcion.delete
-                If MessageBox.Show("Seguro que desea borrar la compra seleccionada?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
-                    estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from dbo.Compras where id_compra = '" + _row_selected.Cells("col_id_compra").Value + "'").Rows(0).Item("estado").ToString
-                    If estado = "N" Then
-                        estado = "S"
-                    Else
-                        estado = "N"
-                    End If
-                    str_sql = "UPDATE dbo.Compras SET estado = '" + estado + "' WHERE id_compra = " + _row_selected.Cells("col_id_compra").Value
-                    If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
-                        MessageBox.Show("Compra Borrada!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Me.Dispose()
-                    Else
-                        MessageBox.Show("Error al borrar la Compra!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    End If
-                End If
+                ' Case Opcion.delete
+                '    If MessageBox.Show("Seguro que desea borrar la compra seleccionada?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+                'estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from dbo.Compras where id_compra = '" + _row_selected.Cells("col_id_compra").Value + "'").Rows(0).Item("estado").ToString
+                'If estado = "N" Then
+                ' estado = "S"
+                ' Else
+                ' estado = "N"
+                'End If
+                'str_sql = "UPDATE dbo.Compras SET estado = '" + estado + "' WHERE id_compra = " + _row_selected.Cells("col_id_compra").Value
+                'If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                ' MessageBox.Show("Compra Borrada!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Me.Dispose()
+                ' Else
+                ' MessageBox.Show("Error al borrar la Compra!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' End If
+                ' End If
 
             Case Opcion.update
                 If validar_campos() Then

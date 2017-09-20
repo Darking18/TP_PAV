@@ -45,36 +45,36 @@
 
                         End If
                     End If
-                Case Opcion.delete
-                If MessageBox.Show("Seguro que desea borrar al Perfil seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
-                    estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Perfiles where id_perfil = '" + _row_selected.Cells("id_perfil").Value + "'").Rows(0).Item("estado").ToString
-                    If estado = "N" Then
-                        estado = "S"
-                    Else
-                        estado = "N"
-                    End If
-                    str_sql = "UPDATE Perfiles SET estado = '" + estado + "' WHERE id_perfil = " + _row_selected.Cells("id_perfil").Value
-                    If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
-                        MessageBox.Show("Perfil Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Me.Dispose()
-                    Else
-                        MessageBox.Show("Error al borrar al Perfil", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    End If
-                End If
+                ' Case Opcion.delete
+                ' If MessageBox.Show("Seguro que desea borrar al Perfil seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+                'estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Perfiles where id_perfil = '" + _row_selected.Cells("id_perfil").Value + "'").Rows(0).Item("estado").ToString
+                'If estado = "N" Then
+                ' estado = "S"
+                ' Else
+                ' estado = "N"
+                ' End If
+                ' str_sql = "UPDATE Perfiles SET estado = '" + estado + "' WHERE id_perfil = " + _row_selected.Cells("id_perfil").Value
+                ' If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                ' MessageBox.Show("Perfil Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' Me.Dispose()
+                ' Else
+                ' MessageBox.Show("Error al borrar al Perfil", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                ' End If
+                ' End If
 
-                Case Opcion.update
-                    If validar_campos() Then
+            Case Opcion.update
+                If validar_campos() Then
                     str_sql = "update Perfiles set n_perfil ='"
                     str_sql += txt_nombre.Text & "'"
                     str_sql += "where id_perfil ='" + _row_selected.Cells("id_perfil").Value + "'"
-                        If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
-                            MessageBox.Show("Usuario actualizado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                            Me.Dispose()
-                        Else
-                            MessageBox.Show("Error al actualizar el Usuario!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        End If
+                    If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                        MessageBox.Show("Usuario actualizado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        Me.Dispose()
+                    Else
+                        MessageBox.Show("Error al actualizar el Usuario!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     End If
-            End Select
+                End If
+        End Select
 
     End Sub
     Private Function validar_campos() As Boolean

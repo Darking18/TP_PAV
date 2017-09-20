@@ -88,9 +88,26 @@ Next
     End Sub
 
     Private Sub btn_quitar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_quitar.Click
-        Frm_abm_user.seleccionar_usuario(Frm_abm_user.Opcion.delete, dgv_users.CurrentRow)
-        Frm_abm_user.ShowDialog()
-        btn_consultar_Click(sender, e)
+        Dim estado As String
+        Dim str_sql As String = ""
+        If MessageBox.Show("Seguro que desea borrar al Usuario seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+            estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Users where id_usuario = '" + dgv_users.CurrentRow.Cells("col_id").Value + "'").Rows(0).Item("estado").ToString
+            If estado = "N" Then
+                estado = "S"
+            Else
+                estado = "N"
+            End If
+            str_sql = "UPDATE Users SET estado = '" + estado + "' WHERE id_usuario = " + dgv_users.CurrentRow.Cells("col_id").Value
+            If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Dispose()
+            Else
+                MessageBox.Show("Error al borrar al Usuario", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End If
+        'Frm_abm_user.seleccionar_usuario(Frm_abm_user.Opcion.delete, dgv_users.CurrentRow)
+        ' Frm_abm_user.ShowDialog()
+        'btn_consultar_Click(sender, e)
     End Sub
 
     Private Sub pnl_filtros_Enter(sender As Object, e As EventArgs) Handles pnl_filtros.Enter

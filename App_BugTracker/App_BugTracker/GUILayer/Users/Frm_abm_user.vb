@@ -57,22 +57,22 @@
 
                     End If
                 End If
-            Case Opcion.delete
-                If MessageBox.Show("Seguro que desea borrar al Usuario seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
-                    estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Users where id_usuario = '" + _row_selected.Cells("col_id").Value + "'").Rows(0).Item("estado").ToString
-                    If estado = "N" Then
-                        estado = "S"
-                    Else
-                        estado = "N"
-                    End If
-                    str_sql = "UPDATE Users SET estado = '" + estado + "' WHERE id_usuario = " + _row_selected.Cells("col_id").Value
-                    If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
-                        MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                        Me.Dispose()
-                    Else
-                        MessageBox.Show("Error al borrar al Usuario", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    End If
-                End If
+                ' Case Opcion.delete
+                'If MessageBox.Show("Seguro que desea borrar al Usuario seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+                ' estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Users where id_usuario = '" + _row_selected.Cells("col_id").Value + "'").Rows(0).Item("estado").ToString
+                'If estado = "N" Then
+                'estado = "S"
+                'Else
+                'estado = "N"
+                'End If
+                'str_sql = "UPDATE Users SET estado = '" + estado + "' WHERE id_usuario = " + _row_selected.Cells("col_id").Value
+                'If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                'MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'Me.Dispose()
+                'Else
+                'MessageBox.Show("Error al borrar al Usuario", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                'End If
+                'End If
 
             Case Opcion.update
                 If validar_campos() Then

@@ -31,9 +31,27 @@ Public Class Cliente
         btn_consulta_Click_1(sender, e)
     End Sub
     Private Sub btn_quitar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_quitar.Click
-        Frm_abm_cliente.seleccionar_usuario(Frm_abm_cliente.Opcion.delete, dgv_cliente.CurrentRow)
-        Frm_abm_cliente.ShowDialog()
-        btn_consulta_Click_1(sender, e)
+        Dim estado As String
+        Dim str_sql As String
+
+        If MessageBox.Show("Seguro que desea borrar al Cliente seleccionado?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) = Windows.Forms.DialogResult.OK Then
+            estado = BDHelper.getDBHelper.ConsultaSQL("Select estado from Cliente where id_cliente = '" + dgv_cliente.CurrentRow.Cells("col_id_id").Value + "'").Rows(0).Item("estado").ToString
+            If estado = "N" Then
+                estado = "S"
+            Else
+                estado = "N"
+            End If
+            str_sql = "UPDATE Cliente SET estado = '" + estado + "' WHERE id_cliente = " + dgv_cliente.CurrentRow.Cells("col_id_id").Value
+            If BDHelper.getDBHelper.EjecutarSQL(str_sql) > 0 Then
+                MessageBox.Show("Cliente Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Dispose()
+            Else
+                MessageBox.Show("Error al borrar al Usuario", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End If
+        'Frm_abm_cliente.seleccionar_usuario(Frm_abm_cliente.Opcion.delete, dgv_cliente.CurrentRow)
+        'Frm_abm_cliente.ShowDialog()
+        'btn_consulta_Click_1(sender, e)
     End Sub
     Private Sub dgv_cliente_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgv_cliente.CellContentClick
         btn_editar.Enabled = True
