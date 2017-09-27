@@ -1,5 +1,6 @@
 ﻿Public Class Frm_Compras
     Friend row_selected As DataGridViewRow
+    Private oCompraSerivce As New CompraServices
 
     Private Sub Frm_Bugs_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'Inicializar componentes:
@@ -53,11 +54,11 @@
 
     'Procedimiento Friend (Amigo) que nos permite llenar la grilla de bugs desde otro formulario.
     'Recibe OPCIONALMENTE una lista de bugs. Si no se recibe nada, se recuperan todos los bug mediante el servicio listarBugs()
-    Private Sub llenarGrid(ByVal source As DataTable)
+    Private Sub llenarGrid(ByRef source As List(Of Compra))
         dgv_bugs.Rows.Clear()
-        For Each fila As DataRow In source.Rows
-            If fila.Item("estado").ToString <> "N" Then
-                dgv_bugs.Rows.Add(New String() {fila.Item("id_compra").ToString, fila.Item("producto").ToString, fila.Item("cantidad").ToString, fila.Item("precio").ToString, fila.Item("n_proveedor").ToString, fila.Item("n_metodo_pago").ToString, fila.Item("estado").ToString})
+        For Each oCompra As Compra In source
+            If oCompra.estado.ToString <> "N" Then
+                dgv_bugs.Rows.Add(New String() {oCompra.id_compra.ToString, oCompra.cantidades.ToString, oCompra.estado, oCompra.metodo_pago.ToString, oCompra.precio.ToString, oCompra.producto.ToString, oCompra.proveedor.ToString})
             End If
         Next
     End Sub
@@ -71,7 +72,7 @@
         If Not ckb_todos.Checked Then
             If txt_cant.Text <> String.Empty Then
                 filters.Add(txt_cant.Text)
-                str += " and cantidad => @param1"
+                'str += " and cantidad => @param1"
                 flag = True
             Else
                 filters.Add(Nothing)
@@ -82,7 +83,7 @@
             If txt_precio.Text <> String.Empty Then
                 'Si el cbo tiene un texto no vacìo entonces recuperamos el valor de la propiedad ValueMember
                 filters.Add(txt_precio.Text)
-                str += "AND precio => @param2 "
+                'str += "AND precio => @param2 "
                 flag = True
             Else
                 filters.Add(Nothing)
@@ -91,7 +92,7 @@
             'Validar si el combo 'Asignado a' esta seleccionado.
             If txt_product.Text <> String.Empty Then
                 filters.Add(txt_product.Text)
-                str += "AND producto = '%' + @param3 + '%'"
+                'str += "AND producto = '%' + @param3 + '%'"
                 flag = True
             Else
                 filters.Add(Nothing)
@@ -108,7 +109,7 @@
             'Validar si el combo 'Criticidad' a esta seleccionado.
             If cbo_proveedor.Text <> String.Empty Then
                 filters.Add(cbo_proveedor.SelectedValue)
-                str += "AND proveedor=@param4 "
+                'str += "AND proveedor=@param4 "
                 flag = True
             Else
                 filters.Add(Nothing)
@@ -117,12 +118,12 @@
             'Validar si el combo 'Producto' a esta seleccionado.
             If cbo_payform.Text <> String.Empty Then
                 filters.Add(cbo_payform.SelectedValue)
-                str += "AND metodo_pago=@param5"
+                'str += "AND metodo_pago=@param5"
                 flag = True
             Else
                 filters.Add(Nothing)
             End If
-            str += " ORDER BY id_compra DESC"
+            'str += " ORDER BY id_compra DESC"
 
             'Solicitar al BDHelper que ejecuta una consulta con los filtros seleccionados
             'dgv_bugs.DataSource = BDHelper.getDBHelper.ConsultarSQLConParametros(str, filters.ToArray())
@@ -132,7 +133,7 @@
             '       "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information)
             '       clear_components()
             If flag Then
-                llenarGrid(BDHelper.getDBHelper.ConsultarSQLConParametros(str, filters.ToArray))
+                llenarGrid(oCompraSerivce.consultarCompraConFiltros(filters.ToArray))
             Else
                 MessageBox.Show("Debe ingresar al menos un criterio", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End If

@@ -23,6 +23,8 @@ Public Class BDHelper
         ' Se utiliza para sentencias SQL del tipo “Insert/Update/Delete”
         Dim conexion As New SqlConnection
         Dim cmd As New SqlCommand
+        Dim t As SqlTransaction = Nothing
+        Dim rtdo As Integer = 0
 
         'Try Catch Finally
         'Trata de ejecutar el código contenido dentro del bloque Try - Catch
@@ -33,20 +35,24 @@ Public Class BDHelper
             conexion.ConnectionString = string_conexion
             ' Abre la conexión
             conexion.Open()
+            t = conexion.BeginTransaction
 
             cmd.Connection = conexion
+            cmd.Transaction = t
             cmd.CommandType = CommandType.Text
             ' Establece la instrucción a ejecutar
             cmd.CommandText = strSql
             ' Retorna el resultado de ejecutar el comando
-            Return cmd.ExecuteNonQuery()
+            rtdo = cmd.ExecuteNonQuery()
+            t.Commit()
         Catch ex As Exception
-            Throw ex
+            If Not IsNothing(t) Then t.Rollback()
         Finally
             ' Cierra la conexión
             If conexion.State = ConnectionState.Open Then conexion.Close()
             conexion.Dispose()
         End Try
+        Return rtdo
     End Function
 
 

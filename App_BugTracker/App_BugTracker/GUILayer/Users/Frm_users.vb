@@ -31,7 +31,7 @@ Public Class Frm_Users
     End Sub
 
     Private Sub btn_consultar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_consultar.Click
-        Dim sql As String = "SELECT n_usuario, email, n_perfil, id_usuario, password, estado FROM Users U JOIN Perfiles P ON U.id_perfil = P.id_perfil  WHERE 1=1"
+        Dim sql As String = "SELECT n_usuario, email, n_perfil, id_usuario, password, u.estado FROM Users U JOIN Perfiles P ON U.id_perfil = P.id_perfil  WHERE 1=1"
         Dim filters As New List(Of Object)
         Dim flag_filtros As Boolean = False
 

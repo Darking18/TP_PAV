@@ -87,6 +87,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLayer\Entites\Compra.vb" />
+    <Compile Include="BusinessLayer\Services\CompraServices.vb" />
+    <Compile Include="DataLayer\DAOs\CompraDao.vb" />
     <Compile Include="DataLayer\Helper\BDHelper.vb" />
     <Compile Include="GUILayer\Clientes\Cliente.Designer.vb">
       <DependentUpon>Cliente.vb</DependentUpon>
@@ -175,11 +178,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="_74507DataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_74507DataSet.xsd</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="GUILayer\Clientes\Cliente.resx">
@@ -235,17 +233,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="_74507DataSet.xsc">
-      <DependentUpon>_74507DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="_74507DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_74507DataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_74507DataSet.xss">
-      <DependentUpon>_74507DataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
