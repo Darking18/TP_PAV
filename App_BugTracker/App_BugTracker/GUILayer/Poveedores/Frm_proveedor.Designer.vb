@@ -34,8 +34,8 @@ Partial Class Frm_proveedor
         Me.txt_phone = New System.Windows.Forms.TextBox()
         Me.txt_account = New System.Windows.Forms.TextBox()
         Me.ProveedorBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me._74507DataSet = New App_BugTracker._74507DataSet()
-        Me.ProveedorTableAdapter = New App_BugTracker._74507DataSetTableAdapters.ProveedorTableAdapter()
+        'Me._74507DataSet = New App_BugTracker._74507DataSet()
+        'Me.ProveedorTableAdapter = New App_BugTracker._74507DataSetTableAdapters.ProveedorTableAdapter()
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_edit = New System.Windows.Forms.Button()
         Me.btn_add = New System.Windows.Forms.Button()
@@ -48,7 +48,7 @@ Partial Class Frm_proveedor
         Me.pnl_filter.SuspendLayout()
         CType(Me.dgv_proveedor, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me._74507DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        'CType(Me._74507DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnl_filter
@@ -151,16 +151,16 @@ Partial Class Frm_proveedor
         'ProveedorBindingSource
         '
         Me.ProveedorBindingSource.DataMember = "Proveedor"
-        Me.ProveedorBindingSource.DataSource = Me._74507DataSet
+        'Me.ProveedorBindingSource.DataSource = Me._74507DataSet
         '
         '_74507DataSet
         '
-        Me._74507DataSet.DataSetName = "_74507DataSet"
-        Me._74507DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        'Me._74507DataSet.DataSetName = "_74507DataSet"
+        'Me._74507DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ProveedorTableAdapter
         '
-        Me.ProveedorTableAdapter.ClearBeforeFill = True
+        'Me.ProveedorTableAdapter.ClearBeforeFill = True
         '
         'btn_delete
         '
@@ -251,7 +251,7 @@ Partial Class Frm_proveedor
         Me.pnl_filter.PerformLayout()
         CType(Me.dgv_proveedor, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProveedorBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me._74507DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        'CType(Me._74507DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -262,9 +262,9 @@ Partial Class Frm_proveedor
     Friend WithEvents txt_account As System.Windows.Forms.TextBox
     Friend WithEvents lbl_phone As System.Windows.Forms.Label
     Friend WithEvents lbl_name As System.Windows.Forms.Label
-    Friend WithEvents _74507DataSet As App_BugTracker._74507DataSet
+    ' Friend WithEvents _74507DataSet As App_BugTracker._74507DataSet
     Friend WithEvents ProveedorBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents ProveedorTableAdapter As App_BugTracker._74507DataSetTableAdapters.ProveedorTableAdapter
+    'Friend WithEvents ProveedorTableAdapter As App_BugTracker._74507DataSetTableAdapters.ProveedorTableAdapter
     Friend WithEvents chb_alls As System.Windows.Forms.CheckBox
     Friend WithEvents btn_consulta As System.Windows.Forms.Button
     Friend WithEvents btn_delete As System.Windows.Forms.Button

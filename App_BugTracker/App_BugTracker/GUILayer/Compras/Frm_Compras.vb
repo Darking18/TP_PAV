@@ -58,7 +58,7 @@
         dgv_bugs.Rows.Clear()
         For Each oCompra As Compra In source
             If oCompra.estado.ToString <> "N" Then
-                dgv_bugs.Rows.Add(New String() {oCompra.id_compra.ToString, oCompra.cantidades.ToString, oCompra.estado, oCompra.metodo_pago.ToString, oCompra.precio.ToString, oCompra.producto.ToString, oCompra.proveedor.ToString})
+                dgv_bugs.Rows.Add(New String() {oCompra.id_compra.ToString, oCompra.n_producto.ToString, oCompra.cantidades.ToString, oCompra.precio.ToString, oCompra.proveedor.ToString, oCompra.metodo_pago.ToString, oCompra.estado.ToString})
             End If
         Next
     End Sub
@@ -138,7 +138,7 @@
                 MessageBox.Show("Debe ingresar al menos un criterio", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             End If
         Else
-            llenarGrid(BDHelper.getDBHelper.ConsultaSQL(str))
+            llenarGrid(oCompraSerivce.consultarcompra())
 
         End If
     End Sub

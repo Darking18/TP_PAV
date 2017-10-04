@@ -23,7 +23,7 @@
     End Sub
     Private Sub btn_aceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_aceptar.Click
         Dim str_sql As String = ""
-        Dim estado As String
+        'Dim estado As String
         Dim tabla As DataTable
         Dim sql As String = ""
         Select Case _action

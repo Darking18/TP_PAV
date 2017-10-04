@@ -11,5 +11,8 @@
     Public Function consultarCompraConFiltros(ByVal params As Object()) As List(Of Compra)
         Return oCompraDao.getCompraByFilters(params)
     End Function
+    Public Function consultarcompra() As List(Of Compra)
+        Return oCompraDao.getall
+    End Function
 End Class
 

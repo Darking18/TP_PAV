@@ -29,12 +29,12 @@ Partial Class Frm_Agregar
         Me.lbl_precio = New System.Windows.Forms.Label()
         Me.lbl_proveedor = New System.Windows.Forms.Label()
         Me.lbl_payform = New System.Windows.Forms.Label()
-        Me.txt_product = New System.Windows.Forms.TextBox()
         Me.txt_cant = New System.Windows.Forms.TextBox()
         Me.txt_precio = New System.Windows.Forms.TextBox()
         Me.cbo_payform = New System.Windows.Forms.ComboBox()
         Me.cbo_proveedor = New System.Windows.Forms.ComboBox()
         Me.lbl_advise = New System.Windows.Forms.Label()
+        Me.cbo_producto = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'btn_cancelar
@@ -100,13 +100,6 @@ Partial Class Frm_Agregar
         Me.lbl_payform.TabIndex = 6
         Me.lbl_payform.Text = "Metodo de Pago"
         '
-        'txt_product
-        '
-        Me.txt_product.Location = New System.Drawing.Point(116, 14)
-        Me.txt_product.Name = "txt_product"
-        Me.txt_product.Size = New System.Drawing.Size(203, 20)
-        Me.txt_product.TabIndex = 7
-        '
         'txt_cant
         '
         Me.txt_cant.Location = New System.Drawing.Point(116, 40)
@@ -146,17 +139,25 @@ Partial Class Frm_Agregar
         Me.lbl_advise.TabIndex = 14
         Me.lbl_advise.Text = "Todos los campos son obligatorios"
         '
+        'cbo_producto
+        '
+        Me.cbo_producto.FormattingEnabled = True
+        Me.cbo_producto.Location = New System.Drawing.Point(116, 12)
+        Me.cbo_producto.Name = "cbo_producto"
+        Me.cbo_producto.Size = New System.Drawing.Size(203, 21)
+        Me.cbo_producto.TabIndex = 15
+        '
         'Frm_Agregar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(412, 233)
+        Me.Controls.Add(Me.cbo_producto)
         Me.Controls.Add(Me.lbl_advise)
         Me.Controls.Add(Me.cbo_proveedor)
         Me.Controls.Add(Me.cbo_payform)
         Me.Controls.Add(Me.txt_precio)
         Me.Controls.Add(Me.txt_cant)
-        Me.Controls.Add(Me.txt_product)
         Me.Controls.Add(Me.lbl_payform)
         Me.Controls.Add(Me.lbl_proveedor)
         Me.Controls.Add(Me.lbl_precio)
@@ -180,10 +181,10 @@ Partial Class Frm_Agregar
     Friend WithEvents lbl_precio As System.Windows.Forms.Label
     Friend WithEvents lbl_proveedor As System.Windows.Forms.Label
     Friend WithEvents lbl_payform As System.Windows.Forms.Label
-    Friend WithEvents txt_product As System.Windows.Forms.TextBox
     Friend WithEvents txt_cant As System.Windows.Forms.TextBox
     Friend WithEvents txt_precio As System.Windows.Forms.TextBox
     Friend WithEvents cbo_payform As System.Windows.Forms.ComboBox
     Friend WithEvents cbo_proveedor As System.Windows.Forms.ComboBox
     Friend WithEvents lbl_advise As System.Windows.Forms.Label
+    Friend WithEvents cbo_producto As System.Windows.Forms.ComboBox
 End Class

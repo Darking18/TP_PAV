@@ -88,8 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLayer\Entites\Compra.vb" />
+    <Compile Include="BusinessLayer\Entites\Stock.vb" />
     <Compile Include="BusinessLayer\Services\CompraServices.vb" />
+    <Compile Include="BusinessLayer\Services\StockServices.vb" />
     <Compile Include="DataLayer\DAOs\CompraDao.vb" />
+    <Compile Include="DataLayer\DAOs\StockDao.vb" />
     <Compile Include="DataLayer\Helper\BDHelper.vb" />
     <Compile Include="GUILayer\Clientes\Cliente.Designer.vb">
       <DependentUpon>Cliente.vb</DependentUpon>
