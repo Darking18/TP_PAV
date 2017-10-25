@@ -199,3 +199,4 @@ D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x8
 D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_abm_cliente.resources
 D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.frm_amb_perfiles.resources
 D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_pefiles.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbprojResolveAssemblyReference.cache

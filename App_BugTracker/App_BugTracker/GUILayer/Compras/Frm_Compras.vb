@@ -66,7 +66,7 @@
     Private Sub btn_consultar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btn_consultar.Click
         'Recuperar datos actualizar grid...
         Dim filters As New List(Of Object)
-        Dim str As String = "SELECT id_compra, producto, cantidad, precio, n_proveedor, n_metodo_pago, Compras.estado FROM ((Compras join  Proveedor on Compras.proveedor = id_proveedor)join  MetodoDePago on Compras.metodo_pago   = id_metodo_pago) where 1=1 "
+        Dim str As String = "SELECT id_compra, producto, cantidad, precio, n_proveedor, n_metodo_pago, Compras.estado FROM ((Compras join  Proveedor on Compras.proveedor = id_proveedor)join  MetodoDePago on Compras.metodo_pago = id_metodo_pago) where 1=1 "
         Dim flag As Boolean = False
         'Validar campos de fechas. Si son fechas válidas las agregamos. Caso contrario Nothing
         If Not ckb_todos.Checked Then
@@ -123,7 +123,7 @@
             Else
                 filters.Add(Nothing)
             End If
-            'str += " ORDER BY id_compra DESC"
+            str += " ORDER BY id_compra DESC"
 
             'Solicitar al BDHelper que ejecuta una consulta con los filtros seleccionados
             'dgv_bugs.DataSource = BDHelper.getDBHelper.ConsultarSQLConParametros(str, filters.ToArray())

@@ -68,6 +68,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -154,6 +155,11 @@
     <Compile Include="GUILayer\Poveedores\Frm_proveedor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUILayer\Reportes\DataSource\ReportCompra.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportCompra.xsd</DependentUpon>
+    </Compile>
     <Compile Include="GUILayer\Users\Frm_abm_user.Designer.vb">
       <DependentUpon>Frm_abm_user.vb</DependentUpon>
     </Compile>
@@ -228,6 +234,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="GUILayer\Reportes\DataSource\ReportCompra.xsc">
+      <DependentUpon>ReportCompra.xsd</DependentUpon>
+    </None>
+    <None Include="GUILayer\Reportes\DataSource\ReportCompra.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportCompra.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GUILayer\Reportes\DataSource\ReportCompra.xss">
+      <DependentUpon>ReportCompra.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -296,7 +313,9 @@
   <ItemGroup>
     <None Include="Resources\comentar.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="GUILayer\Reportes\Reportviewer\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

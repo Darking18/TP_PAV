@@ -5,7 +5,7 @@ Public Class CompraDao
         Dim lst As New List(Of Compra)
 
         Dim sql As String = "SELECT id_compra, producto, cantidad, precio, n_proveedor, n_metodo_pago, Compras.estado " & _
-        "FROM ((Compras join  Proveedor on Compras.proveedor = id_proveedor)join  MetodoDePago on Compras.metodo_pago   = id_metodo_pago) where 1=1  "
+        "FROM ((Compras join  Proveedor on Compras.proveedor = id_proveedor)join  MetodoDePago on Compras.metodo_pago = id_metodo_pago) where 1=1  "
 
         If Not IsNothing(params(0)) Then
             sql += "and producto = '%' @param1 '%' "
@@ -44,10 +44,10 @@ Public Class CompraDao
     Public Function create(ByVal oCompra As Compra)
         Dim str_sql As String
         Dim past As DataTable = BDHelper.getDBHelper.ConsultaSQL("select cantidad from stock where id_producto='" & oCompra.id_producto.ToString & "'")
+        Dim last As DataTable = BDHelper.getDBHelper.ConsultaSQL("select cantidad from metododepago where id_metodo_pago='" & oCompra.metodo_pago.ToString & "'")
         Dim rst As Integer
         Dim ast As Integer
         Dim ast2 As Integer
-        Dim last As DataTable = BDHelper.getDBHelper.ConsultaSQL("select cantidad from metododepago where id_metodo_pago='" & oCompra.metodo_pago.ToString & "'")
 
         rst = Int(past.Rows(0).Item(0) + oCompra.cantidades)
         ast = Int(last.Rows(0).Item(0) - oCompra.precio)
@@ -67,12 +67,12 @@ Public Class CompraDao
         str_sql += "update metododepago set cantidad='"
 
         If oCompra.metodo_pago.ToString = 1 Or oCompra.metodo_pago.ToString = 3 Then
-            str_sql += ast.ToString + "' where id_metodo_pago ='" & oCompra.metodo_pago.ToString & ""
+            str_sql += ast.ToString + "' where id_metodo_pago ='" & oCompra.metodo_pago.ToString & "'"
         Else
             str_sql += ast2.ToString + "' where id_metodo_pago = '" & oCompra.metodo_pago.ToString & "'"
         End If
         'Si una fila es afectada por la inserción retorna TRUE. Caso contrario FALSE
-        Return (BDHelper.getDBHelper().EjecutarSQL(str_sql) = 1)
+        Return (BDHelper.getDBHelper().EjecutarSQL(str_sql) = 3)
     End Function
 
 End Class
