@@ -32,8 +32,11 @@ Partial Class Frm_Principal
         Me.ConsultaDeBugsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaDeProveedorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaDeClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaDePerfilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteDeComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteDeStockToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnl_info_user.SuspendLayout()
         Me.Mnu_principal.SuspendLayout()
         Me.SuspendLayout()
@@ -68,7 +71,7 @@ Partial Class Frm_Principal
         '
         'Mnu_principal
         '
-        Me.Mnu_principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SoporteToolStripMenuItem, Me.BugsToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.Mnu_principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SoporteToolStripMenuItem, Me.BugsToolStripMenuItem, Me.ReportesToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.Mnu_principal.Location = New System.Drawing.Point(0, 0)
         Me.Mnu_principal.Name = "Mnu_principal"
         Me.Mnu_principal.Size = New System.Drawing.Size(461, 24)
@@ -117,18 +120,37 @@ Partial Class Frm_Principal
         Me.ConsultaDeClienteToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
         Me.ConsultaDeClienteToolStripMenuItem.Text = "&Consulta de Cliente"
         '
-        'SalirToolStripMenuItem
-        '
-        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
-        Me.SalirToolStripMenuItem.Text = "&Salir"
-        '
         'ConsultaDePerfilesToolStripMenuItem
         '
         Me.ConsultaDePerfilesToolStripMenuItem.Image = Global.App_BugTracker.My.Resources.Resources.BUSCAR01
         Me.ConsultaDePerfilesToolStripMenuItem.Name = "ConsultaDePerfilesToolStripMenuItem"
         Me.ConsultaDePerfilesToolStripMenuItem.Size = New System.Drawing.Size(194, 22)
         Me.ConsultaDePerfilesToolStripMenuItem.Text = "Consulta de Perfiles"
+        '
+        'SalirToolStripMenuItem
+        '
+        Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Text = "&Salir"
+        '
+        'ReportesToolStripMenuItem
+        '
+        Me.ReportesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteDeComprasToolStripMenuItem, Me.ReporteDeStockToolStripMenuItem})
+        Me.ReportesToolStripMenuItem.Name = "ReportesToolStripMenuItem"
+        Me.ReportesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+        Me.ReportesToolStripMenuItem.Text = "&Reportes"
+        '
+        'ReporteDeComprasToolStripMenuItem
+        '
+        Me.ReporteDeComprasToolStripMenuItem.Name = "ReporteDeComprasToolStripMenuItem"
+        Me.ReporteDeComprasToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ReporteDeComprasToolStripMenuItem.Text = "&Reporte de Compras"
+        '
+        'ReporteDeStockToolStripMenuItem
+        '
+        Me.ReporteDeStockToolStripMenuItem.Name = "ReporteDeStockToolStripMenuItem"
+        Me.ReporteDeStockToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ReporteDeStockToolStripMenuItem.Text = "&Reporte de Stock"
         '
         'Frm_Principal
         '
@@ -164,4 +186,7 @@ Partial Class Frm_Principal
     Friend WithEvents ConsultaDeProveedorToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConsultaDeClienteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConsultaDePerfilesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReportesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReporteDeComprasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReporteDeStockToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

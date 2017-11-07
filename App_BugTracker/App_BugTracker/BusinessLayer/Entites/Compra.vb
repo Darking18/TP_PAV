@@ -7,4 +7,5 @@
     Public Property id_producto As Integer
     Public Property metodo_pago As String
     Public Property estado As String
+    Public Property fecha As String
 End Class

@@ -46,4 +46,14 @@
     Private Sub ConsultaDePerfilesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ConsultaDePerfilesToolStripMenuItem.Click
         Frm_pefiles.ShowDialog()
     End Sub
+
+    Private Sub ReporteDeComprasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeComprasToolStripMenuItem.Click
+        Frm_Report.ShowDialog()
+
+    End Sub
+
+    Private Sub ReporteDeStockToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteDeStockToolStripMenuItem.Click
+        Frm_Report_Stock.ShowDialog()
+
+    End Sub
 End Class

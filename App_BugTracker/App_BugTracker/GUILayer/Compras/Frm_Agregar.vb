@@ -46,6 +46,8 @@
             oCompra.precio = txt_precio.Text
             oCompra.metodo_pago = cbo_payform.SelectedValue
             oCompra.proveedor = cbo_proveedor.SelectedValue
+            oCompra.fecha = Date.Today.ToString
+
 
             If oCompraServices.create(oCompra) Then
                 MessageBox.Show("La Compra se ha registrado con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information)

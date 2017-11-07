@@ -200,3 +200,7 @@ D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x8
 D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.frm_amb_perfiles.resources
 D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_pefiles.resources
 D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.vbprojResolveAssemblyReference.cache
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Report.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\App_BugTracker.Frm_Report_Stock.resources
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\RdlCompile.cache
+D:\Modelo ABMC Usuarios para alumnos\TP_PAV\App_BugTracker\App_BugTracker\obj\x86\Debug\RdlCompile.compiled

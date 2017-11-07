@@ -53,12 +53,13 @@ Public Class CompraDao
         ast = Int(last.Rows(0).Item(0) - oCompra.precio)
         ast2 = Int(last.Rows(0).Item(0) + oCompra.precio)
 
-        str_sql = "INSERT INTO compras (producto,cantidad,precio,proveedor,metodo_pago, estado) VALUES('"
+        str_sql = "INSERT INTO compras (producto,cantidad,precio,proveedor,metodo_pago, estado, fecha) VALUES('"
         str_sql += oCompra.n_producto.ToString + "','"
         str_sql += oCompra.cantidades.ToString + "','"
         str_sql += oCompra.precio.ToString + "','"
         str_sql += oCompra.proveedor.ToString + "',' "
-        str_sql += oCompra.metodo_pago.ToString + "','S');"
+        str_sql += oCompra.metodo_pago.ToString + "','S',"
+        str_sql += oCompra.fecha.ToString + " );"
 
         str_sql += "Update Stock set id_producto='"
         str_sql += oCompra.id_producto.ToString + "',cantidad='"
@@ -72,7 +73,7 @@ Public Class CompraDao
             str_sql += ast2.ToString + "' where id_metodo_pago = '" & oCompra.metodo_pago.ToString & "'"
         End If
         'Si una fila es afectada por la inserción retorna TRUE. Caso contrario FALSE
-        Return (BDHelper.getDBHelper().EjecutarSQL(str_sql) = 3)
+        Return (BDHelper.getDBHelper().EjecutarSQL(str_sql) >= 3)
     End Function
 
 End Class

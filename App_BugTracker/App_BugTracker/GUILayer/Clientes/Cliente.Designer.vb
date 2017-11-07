@@ -233,12 +233,12 @@ Partial Class Cliente
         Me.dgv_cliente.AllowUserToDeleteRows = False
         Me.dgv_cliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_cliente.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.col_id_id, Me.DataGridViewTextBoxColumn6})
-        Me.dgv_cliente.Location = New System.Drawing.Point(77, 144)
+        Me.dgv_cliente.Location = New System.Drawing.Point(31, 144)
         Me.dgv_cliente.Name = "dgv_cliente"
         Me.dgv_cliente.ReadOnly = True
         Me.dgv_cliente.RowHeadersVisible = False
         Me.dgv_cliente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgv_cliente.Size = New System.Drawing.Size(372, 192)
+        Me.dgv_cliente.Size = New System.Drawing.Size(418, 192)
         Me.dgv_cliente.TabIndex = 8
         '
         'DataGridViewTextBoxColumn1
@@ -366,7 +366,7 @@ Partial Class Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(604, 502)
+        Me.ClientSize = New System.Drawing.Size(604, 465)
         Me.Controls.Add(Me.btn_quitar)
         Me.Controls.Add(Me.pnl_filtros)
         Me.Controls.Add(Me.btn_salir)
@@ -379,7 +379,10 @@ Partial Class Cliente
         Me.Controls.Add(Me.btn_consultar)
         Me.Controls.Add(Me.cbo_perfiles)
         Me.Controls.Add(Me.lbl_estado)
+        Me.MaximizeBox = False
         Me.Name = "Cliente"
+        Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Cliente"
         CType(Me.dgv_users, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnl_filtros.ResumeLayout(False)

@@ -64,6 +64,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -155,10 +157,27 @@
     <Compile Include="GUILayer\Poveedores\Frm_proveedor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GUILayer\Reportes\DataSource\StockSource.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StockSource.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\Reportes\Frm_Report.Designer.vb">
+      <DependentUpon>Frm_Report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\Reportes\Frm_Report.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GUILayer\Reportes\DataSource\ReportCompra.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ReportCompra.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\Reportes\Frm_Report_Stock.Designer.vb">
+      <DependentUpon>Frm_Report_Stock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GUILayer\Reportes\Frm_Report_Stock.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUILayer\Users\Frm_abm_user.Designer.vb">
       <DependentUpon>Frm_abm_user.vb</DependentUpon>
@@ -219,6 +238,14 @@
     <EmbeddedResource Include="GUILayer\Poveedores\Frm_proveedor.resx">
       <DependentUpon>Frm_proveedor.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\Reportes\Design\ReportStock.rdlc" />
+    <EmbeddedResource Include="GUILayer\Reportes\Frm_Report.resx">
+      <DependentUpon>Frm_Report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUILayer\Reportes\Design\Repocompra.rdlc" />
+    <EmbeddedResource Include="GUILayer\Reportes\Frm_Report_Stock.resx">
+      <DependentUpon>Frm_Report_Stock.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUILayer\Users\Frm_abm_user.resx">
       <DependentUpon>Frm_abm_user.vb</DependentUpon>
     </EmbeddedResource>
@@ -244,6 +271,17 @@
     </None>
     <None Include="GUILayer\Reportes\DataSource\ReportCompra.xss">
       <DependentUpon>ReportCompra.xsd</DependentUpon>
+    </None>
+    <None Include="GUILayer\Reportes\DataSource\StockSource.xsc">
+      <DependentUpon>StockSource.xsd</DependentUpon>
+    </None>
+    <None Include="GUILayer\Reportes\DataSource\StockSource.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StockSource.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="GUILayer\Reportes\DataSource\StockSource.xss">
+      <DependentUpon>StockSource.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -313,9 +351,7 @@
   <ItemGroup>
     <None Include="Resources\comentar.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUILayer\Reportes\Reportviewer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

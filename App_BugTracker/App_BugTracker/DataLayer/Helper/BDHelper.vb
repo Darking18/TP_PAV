@@ -117,5 +117,17 @@ Public Class BDHelper
             conexion.Dispose()
         End Try
     End Function
+    Public Function queryReportProduct(ByVal fec_desde As String, ByVal fec_hasta As String) As DataTable
+        Dim sql As String = "Select producto , precio, cantidad " & _
+        "from Compras where  fecha >= '" + Convert.ToDateTime(fec_desde.ToString) + "' and fecha <= '" + Convert.ToDateTime(fec_hasta.ToString) + "'"
+
+        Return Me.ConsultaSQL(Sql)
+    End Function
+
+    Public Function queryreportstock() As DataTable
+        Dim sql As String = "select p.nombre, s.cantidad from Stock s, Productos p where s.id_producto = p.id_producto "
+        Return Me.ConsultaSQL(sql)
+    End Function
+
 End Class
 
